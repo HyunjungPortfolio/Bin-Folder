@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url(mobile.css);
+
+.wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: solid 2px #17AF71;
+  box-sizing: border-box;
+}
+main .m-con {
+  width: 100%;
+  margin: auto
+}
+
+main .box1 {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: large;
+  letter-spacing: -0.5px;
+  background: #17AF71;
+  color: #eee;
+}
+main .box1 p {
+  float: left;
+}
+main .box1 p:first-child {
+  padding-left: 20px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+main .box1 a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background: #fff;
+  color: #17AF71;
+}
+
+main .box2 {
+  width: 100%;
+  height: 40px;
+  border-left: solid 2px #17AF71;
+  border-right: solid 2px #17AF71;
+  box-sizing: border-box;
+}
+main .box2 .sch {
+  float: left;
+  display: block;
+  height: 100%;
+  width: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  color: #333;
+}
+main .box2 .search {
+  float: left;
+  display: block;
+  height: 100%;
+  width: 55%;
+}
+main .box2 button {
+  height: 100%;
+  width: 15%;
+  float: right;
+  color: #919191;
+  background: transparent;
+}
+
+main .box3 {
+  width: 100%;
+  height: 40px;
+  
+  line-height: 40px;
+  background: #919191;
+}
+main .box3 li {
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+  
+  text-align: center;
+  font-size: small
+}
+main .box3 li:nth-child(1) i {color: #ccc;}
+main .box3 li:nth-child(2) i {color: #ff0000;}
+main .box3 li:nth-child(3) i {color: #ffc400;}
+main .box3 li:nth-child(4) i {color: #187e00;}
+main .box3 li:nth-child(5) i {color: #000000;}
+
+main .img-box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: solid 2px #17AF71;
+  border-top: 0;
+  overflow: hidden
+}
+main img {
+  width: 110%;
+  display: block;
+}
+
+footer {
+  display: none;
+}

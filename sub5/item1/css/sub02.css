@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url(common.css);
+
+main {}
+main .m-con {
+  width: 1020px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+main h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+main p {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+main p:before {
+  content: "· "
+}
+main .text-box {
+  margin-bottom: 50px
+}
+main .box {
+  float: left;
+  width: 500px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden
+}
+main .box1 {
+  height: 260px;
+  line-height: 260px;
+  margin-right: 20px;
+  border: solid 1px #aaa;
+  background: #ebebeb;
+}
+main .box2 {
+  height: 120px;
+  line-height: 120px;
+  margin-bottom: 20px;
+  background: #17AF71;
+}
+main .box3 {
+  height: 120px;
+  line-height: 120px;
+  background: #4F4F4F;
+  color: #eee;
+}
+main h3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: x-large;
+  letter-spacing: -1px
+}
+main a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .box:hover {
+  border: solid 3px #17AF71
+}
+main .box2:hover {
+  border: solid 3px #171717
+}
+
+/*반응형*/
+@media screen and (max-width:1280px) {
+  main .m-con {
+    width: 80%;
+  }
+  main .box1 {
+    width: 48%;
+  }
+  main .box2,
+  main .box3 {
+    width: 48%;
+  }
+}
