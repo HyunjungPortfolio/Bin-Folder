@@ -1,0 +1,323 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto|Noto+Sans+KR);
+@import url(normalize.css);
+@import url(all.min.css);
+
+/*font*/
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #000;
+  color: #eee;
+}
+.en {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+header {
+  position: absolute;
+  top: -1000px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+header {
+  padding: 150px 0;
+  text-align: center;
+}
+header i {
+  font-size: 200px;
+}
+header h1 {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-size: 60px;
+  font-weight: normal;
+}
+header p {
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+header li a {
+  padding: 5px;
+  line-height: 2;
+  opacity: 0.4;
+}
+header li a:hover {
+  opacity: 1;
+}
+main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+main section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*con 전체 레이아웃*/
+main .con article {
+  float: left;
+  width: 16.6666%;
+  height: 25%;
+  box-sizing: border-box;
+  overflow: hidden
+}
+main .con article:nth-child(1) {
+  width: 50%;
+  height: 50%;
+}
+main .con article:nth-child(2),
+main .con article:nth-child(6) {
+  width: 33.3333%;
+  height: 50%;
+}
+main .con article:nth-child(5) {
+  height: 50%;
+}
+main .con article:nth-child(8) {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+main .con article:nth-child(9) {
+  width: 33.3333%;
+  height: 50%;
+}
+
+/*con1 개별 스타일링*/
+main .con1 article:nth-child(1) video {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+}
+main .con1 article:nth-child(2) {
+  background: url(../img/con1-pic1.jpg) no-repeat center 120px / 600px;
+  transition: all .3s
+}
+main .con1 article:nth-child(3) p {
+  padding-top: 70px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+main .con1 article:nth-child(4) {
+  background: url(../img/con1-pic5.jpg) no-repeat center center / cover
+}
+main .con1 article:nth-child(5) img {
+  animation: j linear 20s infinite
+}
+main .con1 article:nth-child(5) img:hover {
+  animation-play-state: paused
+}
+main .con1 article:nth-child(6) {
+  position: relative;
+}
+main .con1 article:nth-child(6) h2 {
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+  font-size: 68px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+main .con1 article:nth-child(6) p {
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+  font-size: 22px;
+  letter-spacing: -0.5px
+}
+main .con1 article:nth-child(7) a {
+  display: block;
+  padding-top: 75px;
+  text-align: center;
+  font-size: 60px;
+  
+  opacity: 0.6;
+  transition: all .3s
+}
+main .con1 article:nth-child(7) a:hover {
+  opacity: 1;
+}
+main .con1 article:nth-child(9) img {
+  animation: i linear 60s infinite alternate
+}
+main .con1 article:nth-child(9) img:hover {
+  animation-play-state: paused
+}
+@keyframes i {
+  0% {transform: translate(-100px, 50px)}
+  100% {transform: translate(100px, 90px)}
+}
+@keyframes j {
+  0% {transform: translateX(-1000px)}
+  100% {transform: translateX(0px)}
+}
+
+/*con2 개별 스타일링*/
+main .con2 article:nth-child(1) img {
+  position: relative;
+  left: -150px;
+  top: -300px;
+  animation: k linear 60s infinite;
+  transform-origin: center center;
+}
+@keyframes k {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+main .con2 article:nth-child(1) img:hover {
+  animation-play-state: paused
+}
+main .con2 article:nth-child(2) {
+  background: url(../img/con2-pic2.jpg) no-repeat center -80px / 600px;
+  transition: all .3s
+}
+main .con2 article:nth-child(3) p {
+  padding-top: 50px;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center
+}
+main .con2 article:nth-child(4) {
+  background: url(../img/con2-pic3.jpg) no-repeat center -210px / 500px
+}
+main .con2 article:nth-child(5) p {
+  padding-top: 140px;
+  font-size: 60px;
+  text-align: center;
+}
+main .con2 article:nth-child(6) {
+  position: relative;
+}
+main .con2 article:nth-child(6) h2 {
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+  font-size: 68px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+main .con2 article:nth-child(6) p {
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+  font-size: 22px;
+  letter-spacing: -0.5px
+}
+main .con2 article:nth-child(7) a {
+  display: block;
+  padding-top: 75px;
+  text-align: center;
+  font-size: 60px;
+  
+  opacity: 0.6;
+  transition: all .3s
+}
+main .con2 article:nth-child(7) a:hover {
+  opacity: 1;
+}
+main .con2 article:nth-child(9) {
+  background: url(../img/con2-pic4.jpg) no-repeat center -10px / cover;
+  transition: all .3s
+}
+main .con2 article:nth-child(9):hover {
+  background: url(../img/con2-pic5.jpg) no-repeat center 0px / cover
+}
+
+/*con3 개별 스타일링*/
+main .con3 article:nth-child(1) img {
+  position: relative;
+  left: -800px;
+  top: -400px;
+  animation: k linear 60s infinite;
+  transform-origin: center center;
+}
+
+main .con3 article:nth-child(1) img:hover {
+  animation-play-state: paused
+}
+main .con3 article:nth-child(2) {
+  background: url(../img/con3-pic5.jpg) no-repeat center center / cover
+}
+main .con3 article:nth-child(3) p {
+  padding-top: 70px;
+  padding-left: 10px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+main .con3 article:nth-child(4) {
+  background: url(../img/con3-pic2.jpg) no-repeat center center / 300px
+}
+main .con3 article:nth-child(5) {
+  background: url(../img/con3-pic4.jpg) no-repeat center center / cover
+}
+main .con3 article:nth-child(6) {
+  position: relative;
+}
+main .con3 article:nth-child(6) h2 {
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+  font-size: 68px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+main .con3 article:nth-child(6) p {
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+  font-size: 22px;
+  letter-spacing: -0.5px
+}
+main .con3 article:nth-child(7) a {
+  display: block;
+  padding-top: 75px;
+  text-align: center;
+  font-size: 60px;
+  
+  opacity: 0.6;
+  transition: all .3s
+}
+main .con3 article:nth-child(7) a:hover {
+  opacity: 1;
+}
+main .con3 article:nth-child(9) video {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/*jQuery*/
+header.on {
+  top: 0;
+  z-index: 1;
+  transform: rotateX(0deg)
+}
+header {
+  transform: rotateX(100deg);
+  transition: all 1s
+}
+section {
+  z-index: 0;
+  opacity: 0;
+  perspective: 500px;
+  transform: rotateX(50deg) translateY(500px);
+  transition: all 1s
+}
+section.on {
+  opacity: 1;
+  z-index: 1;
+  transform: rotateX(0deg) translateY(0px)
+}
