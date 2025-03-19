@@ -1,0 +1,200 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,700|Sulphur+Point:300);
+@import url(normalize.css);
+@import url(all.min.css);
+
+/*font*/
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -.5px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Sulphur Point';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.wrap {
+  position: relative;
+}
+
+figure {
+  position: relative;
+  height: 800px;
+}
+figure .f-con {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+}
+figure h1 {
+  position: relative;
+  top: -35px;
+  font-size: 180px;
+  letter-spacing: -5px;
+  text-align: center;
+}
+figure .txt-box {
+  position: absolute;
+  bottom: 100px;
+}
+figure .title {
+  font-size: 24px;
+}
+figure h2 {
+  font-size: 52px;
+  letter-spacing: -2px;
+}
+figure .key {
+  margin-left: 100px;
+  line-height: 1;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+}
+figure a {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  width: 200px;
+  height: 30px;
+  
+  font-family: 'Sulphur Point';
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: .5px;
+  background: url(../img/arrow-black.svg) no-repeat 20px bottom / 120px;
+}
+figure a:hover {
+  animation: arrow 1s infinite
+}
+@keyframes arrow {
+  0% {background-position: 20px bottom }
+  100% {background-position: 50px bottom }
+}
+main .s-con {
+  position: relative;
+  padding: 100px 0;
+  width: 1000px;
+  margin: auto;
+}
+main h2 {
+  font-size: 52px;
+  letter-spacing: -2px;
+}
+main p {
+  margin: 0 100px;
+  line-height: 1.5;
+  text-align: justify;
+}
+main .sec1 h2,
+main .sec2 h2,
+main .sec4 h2 {
+  position: absolute;
+  top: -10px;
+}
+main .sec1 {
+  background: #000;
+  color: #fff;
+}
+main .sec2 p,
+main .sec3 p {
+  margin-bottom: 30px;
+}
+main .sec2 p:last-of-type,
+main .sec3 p:last-of-type {
+  margin-bottom: 0;
+}
+main .sec3 .s-con {
+  padding-top: 0;
+}
+main .sec3 h2 {
+  margin-bottom: 60px;
+}
+
+main .sec3 article:nth-child(1) p {
+  width: 73px;
+  line-height: 1;
+  font-size: 20px;
+  color: #fff;
+}
+main .sec3 article:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+main .sec3 article:nth-child(2) img {
+  position: relative;
+  left: 50px;
+}
+main .sec4 {
+  background: #ddd;
+  color: #fff;
+}
+main .sec5 {
+  background: #fff;
+}
+
+.btn-box {
+  position: fixed;
+  top: 120px;
+  right: 8%;
+  width: 100px;
+  height: 80%;
+}
+.btn-box a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  
+  background: no-repeat center center / 35px;
+  transition: all .3s
+}
+.btn-box .close-btn {
+  background-image: url(../img/close.svg)
+}
+.btn-box .close-btn:hover {
+  transform: rotate(-90deg)
+}
+.btn-box .link-btn {
+  background-image: url(../img/link.svg);
+}
+.btn-box .top-btn {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(../img/top.svg);
+  background-size: 36px
+}
+.btn-box .top-btn:hover {
+  transform: translateY(-10px)
+}
+
+.btn-box .link-list {
+  display: none;
+  position: relative;
+  top: -20px;
+  left: -24px;
+}
+.btn-box li:nth-child(2):hover .link-list {
+  display: block;
+}
+.btn-box .link-list a {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 0;
+  
+  font-family: 'Sulphur Point';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: none
+}
