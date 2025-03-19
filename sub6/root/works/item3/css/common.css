@@ -1,0 +1,708 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt|IM+Fell+French+Canon|Nanum+Myeongjo);
+@import url(all.min.css);
+@import url(normalize.css);
+
+/*font*/
+body {
+  font-family: 'Nanum Myeongjo', sans-serif;
+}
+body h2,
+body h3 {
+  font-family: 'IM Fell French Canon', sans-serif;
+}
+body {
+  background: #191919;
+  color: #eee;
+}
+.hd {
+  display: none;
+}
+.write {
+  font-family: 'Rock Salt';
+}
+
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1
+}
+header .logo {
+  position: absolute;
+  left: 100px;
+  width: 80px;
+  height: 80px;
+}
+header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo.png) no-repeat center center / 50px;
+  
+  transition: all .3s
+}
+header .logo a:hover {
+  background-image: url(../img/logo-color.png)
+}
+header .hm-btn {
+  position: absolute;
+  right: 100px;
+  width: 80px;
+  height: 80px;
+  background: url(../img/hmbtn.svg) no-repeat center center / 32px;
+  transition: all .3s;
+  z-index: 2
+}
+header .hm-btn:hover {
+  background-image: url(../img/hmbtn-color.svg)
+}
+header .hm-btn.on {
+  background-image: url(../img/close.svg)
+}
+header .hm-btn.on:hover {
+  background-image: url(../img/close-color.svg)
+}
+
+header .gnb {
+  display: none;
+}
+header .gnb {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0;
+  background: #000;
+}
+header .gnb a {
+  display: block;
+  position: relative;
+  right: 140px;
+  margin-bottom: 60px;
+  font-size: 60px;
+  text-align: right;
+  transition: all .3s
+}
+header .gnb a:hover {
+  color: #779eb2;
+}
+
+footer {
+  position: relative;
+  height: 100px;
+}
+footer p {
+  position: absolute;
+  left: 140px;
+}
+footer .sns {
+  position: absolute;
+  left: 270px;
+}
+footer .sns a {
+  padding: 0 10px;
+  color: #999;
+  transition: all .3s
+}
+footer .sns a:hover {
+  color: #eee;
+}
+footer address {
+  position: absolute;
+  right: 140px;
+  font-style: normal;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.visual .bg {
+  width: 100%;
+  height: 980px;
+}
+.visual .bg video {
+  width: 100%;
+}
+.visual .bg img {
+  display: none;
+}
+.visual .txt-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
+}
+.visual h2 {
+  font-size: 80px;
+  font-weight: normal;
+  text-align: center;
+}
+.visual .down-btn {
+  position: absolute;
+  bottom: 150px;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  background: transparent;
+  cursor: pointer
+}
+.visual .down-btn img {
+  width: 100%;
+  animation: scrl 1s infinite
+}
+@keyframes scrl {
+  0% {transform: translateY(5px)}
+  100% {transform: translateY(15px)}
+}
+
+main section .s-con {
+  width: 1200px;
+  padding: 150px 0;
+  margin: auto;
+}
+main section h2 {
+  margin-bottom: 100px;
+  font-weight: normal;
+  font-size: 52px;
+  text-align: center;
+}
+
+@media screen and (min-width:1281px) {
+main .sec1 {
+  position: relative;
+  height: 2350px;
+}
+main .sec1 article {
+  position: absolute;
+  width: 1200px;
+}
+main .sec1 h2 {
+  position: absolute;
+  font-size: 52px;
+  text-align: left;
+  transition: all .3s
+} 
+main .sec1 p {
+  position: absolute;
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #aaa;
+  transition: all .3s
+}
+main .sec1 .line {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background: #eee;
+  transition: all .3s
+}
+main .sec1 article img {
+  transition: all .3s
+}
+main .sec1 article:hover img {
+  opacity: .2;
+}
+main .sec1 article:nth-child(1) {
+  height: 500px;
+}
+main .sec1 article:nth-child(1) h2 {
+  top: 0;
+  left: 550px;
+}
+main .sec1 article:nth-child(1):hover h2 {
+  transform: translateX(-400px);
+  color: #779eb2;
+  text-shadow: 0px 0px 5px #111
+}
+main .sec1 article:nth-child(1) .line {
+  top: 156px;
+  left: 550px;
+}
+main .sec1 article:nth-child(1):hover .line {
+  top: 0;
+  width: 400px;
+  background: #779eb2;
+}
+main .sec1 article:nth-child(1) p {
+  top: 200px;
+  left: 550px;
+  width: 400px;
+}
+main .sec1 article:nth-child(1):hover p {
+  transform: translateY(-150px);
+  color: #eee;
+}
+
+main .sec1 article:nth-child(2) {
+  top: 600px;
+  height: 750px;
+}
+
+main .sec1 article:nth-child(2) img {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+main .sec1 article:nth-child(2) h2 {
+  top: 500px;
+  right: 590px;
+}
+main .sec1 article:nth-child(2):hover h2 {
+  right: 200px;
+  color: #779eb2;
+}
+main .sec1 article:nth-child(2) .line {
+  top: 600px;
+  right: 590px;
+}
+main .sec1 article:nth-child(2):hover .line {
+  top: 500px;
+  width: 400px;
+  background: #779eb2;
+}
+main .sec1 article:nth-child(2) p {
+  top: 650px;
+  right: 590px;
+  width: 400px;
+}
+main .sec1 article:nth-child(2):hover p {
+  top: 550px;
+  color: #eee;
+}
+
+main .sec1 article:nth-child(3) {
+  top: 1420px;
+  height: 850px;
+}
+main .sec1 article:nth-child(3) h2 {
+  top: 620px;
+  left: 50px;
+}
+main .sec1 article:nth-child(3):hover h2 {
+  top: 520px;
+  color: #779eb2;
+}
+main .sec1 article:nth-child(3) .line {
+  top: 720px;
+  left: 50px;
+}
+main .sec1 article:nth-child(3):hover .line {
+  top: 620px;
+  width: 900px;
+  background: #779eb2;
+}
+main .sec1 article:nth-child(3) p {
+  top: 770px;
+  left: 50px;
+  width: 900px;
+}
+main .sec1 article:nth-child(3):hover p {
+  top: 670px;
+  color: #eee;
+}
+}
+
+main .sec2 .s-con {
+  position: relative;
+  padding-bottom: 0;
+  background: url(../img/logo.svg) no-repeat center 70% / 30%;
+}
+main .sec2 img {
+  position: absolute;
+  width: 50px;
+  opacity: 0;
+}
+main .sec2 .ef1 {
+  top: 180px;
+  left: 37%;
+}
+main .sec2 .ef2 {
+  top: 250px;
+  left: 50%;
+}
+main .sec2 .ef3 {
+  top: 200px;
+  left: 62%;
+}
+main .sec2 .s-con:hover .ef1 {
+  animation: ef1 1.5s infinite
+}
+@keyframes ef1 {
+  0% {transform: translateY(0)}
+  20% {opacity: 1;}
+  100% {transform: translateY(380px)}
+}
+main .sec2 .s-con:hover .ef2 {
+  animation: ef2 1.6s infinite;
+  animation-delay: 0.5s
+}
+@keyframes ef2 {
+  0% {transform: translateY(0)}
+  20% {opacity: 1;}
+  100% {transform: translateY(250px)}
+}
+main .sec2 .s-con:hover .ef3 {
+  animation: ef2 1.4s infinite;
+  animation-delay: 0.3s
+}
+@keyframes ef3 {
+  0% {transform: translateY(0)}
+  20% {opacity: 1;}
+  100% {transform: translateY(400px)}
+}
+main .sec2 p {
+  padding-top: 30%;
+  text-align: center;
+  font-size: 17px;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+main .sec3 h2 {
+  text-align: right;
+}
+main .sec3 .img-con {
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin-right: 5%;
+  overflow: hidden;
+}
+main .sec3 .img-con:last-child {
+  margin-right: 0;
+}
+main .sec3 .img-con img {
+  width: 100%;
+  transition: all .3s
+}
+main .sec3 .img-con:hover img {
+  transform: scale(1.2)
+}
+main .sec4 {
+  background: url(../img/bg2.jpg) no-repeat fixed center center / cover;
+  text-align: center;
+}
+main .sec4 p {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+main .sec4 blockquote {
+  font-size: 20px;
+  font-style: italic;
+}
+main .sec5 h2 {
+  text-align: left;
+}
+main .sec5 {}
+main .sec5 .gallery {
+  position: relative;
+  height: 900px;
+  background: #eee;
+  cursor: pointer;
+}
+main .sec5 article {
+  float: left;
+  width: 25%;
+  height: 300px;
+  overflow: hidden;
+  background: no-repeat center center / cover;
+  transition: all .3s
+}
+main .sec5 img {
+  width: 100%;
+}
+main .sec5 article:hover {
+  opacity: .2;
+}
+main .sec5 article:nth-child(1) {background-image: url(../img/gal1.jpg)}
+main .sec5 article:nth-child(2) {background-image: url(../img/gal2.jpg)}
+main .sec5 article:nth-child(3) {background-image: url(../img/gal3.jpg)}
+main .sec5 article:nth-child(4) {background-image: url(../img/gal4.jpg)}
+main .sec5 article:nth-child(5) {background-image: url(../img/gal5.jpg)}
+main .sec5 article:nth-child(6) {background-image: url(../img/gal6.jpg)}
+main .sec5 article:nth-child(7) {background-image: url(../img/gal7.jpg)}
+main .sec5 article:nth-child(8) {background-image: url(../img/gal8.jpg)}
+
+main .sec5 article:nth-child(4) {
+  position: absolute;
+  top: 300px;
+}
+main .sec5 article:nth-child(5) {
+  position: absolute;
+  top: 300px;
+  left: 25%;
+}
+main .sec5 article:nth-child(3) {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 600px;
+}
+main .sec5 article:nth-child(6) {
+  width: 50%;
+}
+
+.top-btn {
+  display: none;
+  position: fixed;
+  right: 120px;
+  bottom: 100px;
+  width: 80px;
+  height: 80px;
+  background: url(../img/top.svg) no-repeat center center / 50px;
+  transition: all .3s
+}
+.top-btn:hover {
+  background-image: url(../img/top-color.svg)
+}
+
+/*tablet*/
+@media screen and (min-width:800px) and (max-width:1280px) {
+  header .logo {
+    left: 50px;
+  }
+  header .hm-btn {
+    right: 50px;
+  }
+  header .gnb {
+    padding-top: 100px;
+  }
+  footer p {
+    left: 80px;
+  }
+  footer .sns {
+    left: 200px;
+  }
+  footer address {
+    right: 80px;
+  }
+  .visual .bg img {
+    display: block;
+    height: 100%;
+  }
+  .visual .bg video {
+    display: none;
+  }
+  main section .s-con {
+    width: 90%;
+  }
+  main .sec1 h2 {
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 40px
+  }
+  main .sec1 p {
+    line-height: 1.7;
+    color: #aaa;
+  }
+  main .sec1 .line {
+    display: none;
+  }
+  main .sec1 article {
+    width: 100%;
+  }
+  main .sec1 article img {
+    float: left;
+  }
+  main .sec1 article:nth-child(1) img {
+    width: 50%;
+    margin-right: 50px;
+  } 
+  main .sec1 article:nth-child(2) img {
+    float: right;
+    position: relative;
+    margin-left: 50px;
+    top: -100px;
+    width: 50%;
+  } 
+  main .sec1 article:nth-child(2) h2 {
+    padding-top: 25%;
+    text-align: right;
+  } 
+  main .sec1 article:nth-child(3) img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .sec2 .s-con {
+    padding-top: 0;
+    background-position: 50% center;
+  }
+  main .sec2 img {
+    display: none;
+  }
+  main .sec2 p {
+    padding-top: 20%;
+  }
+  main .sec3 .img-con {
+    height: 300px;
+  }
+  main .sec5 .gallery {
+    height: auto;
+  }
+  main .sec5 article:hover img {
+    opacity: 1;
+  }
+  .top-btn {
+    right: 60px;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width:799px) {
+  header .logo {
+    left: 10px;
+  }
+  header .hm-btn {
+    right: 10px;
+  }
+  header .gnb {
+    padding-top: 100px;
+  }
+  header .gnb a {
+    right: 80px;
+    font-size: 36px
+  }
+  footer {
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 17px
+  }
+  footer p {
+    position: static
+  }
+  footer .sns {
+    position: static;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    
+    font-size: 40px;
+    color: #fff;
+  }
+  footer address {
+    position: static
+  }
+  .visual .bg img {
+    display: block;
+    height: 100%;
+  }
+  .visual .bg video {
+    display: none;
+  }
+  .visual .txt-box {
+    width: 100%;
+    margin-left: -50%;
+  }
+  .visual h2 {
+    font-size: 60px
+  }
+  .visual .down-btn {
+    bottom: 50px;
+  }
+  .visual .down-btn img {
+    animation: none
+  }
+  main section .s-con {
+    width: 90%;
+    padding: 50px 0;
+  }
+  main .sec1 h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 40px
+  }
+  main .sec1 p {
+    margin-bottom: 70px;
+    line-height: 1.7;
+    color: #aaa;
+  }
+  main .sec1 .line {
+    display: none;
+  }
+  main .sec1 article {
+    width: 100%;
+  }
+  main .sec1 article img {
+    width: 100%;
+  }
+  main .sec1 article:nth-child(1) img {
+    margin-right: 0px;
+  } 
+  main .sec1 article:nth-child(2) img {
+    position: static
+  } 
+  main .sec1 article:nth-child(3) img {
+    width: 100%;
+  }
+  main .sec2 .s-con {
+    padding-top: 0;
+    background-size: 50%;
+    background-position: 50% center;
+  }
+  main .sec2 img {
+    display: none;
+  }
+  main .sec2 p {
+    padding-top: 30%;
+  }
+  main .sec3 .s-con {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main .sec3 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  main .sec3 .img-con {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  main .sec3 .img-con img {
+    position: absolute;
+    top: -40%;
+  }
+  main .sec5 .s-con {
+    padding-top: 100px;
+  }
+  main .sec5 h2 {
+    margin-bottom: 30px;
+  }
+  main .sec5 .gallery {
+    height: auto;
+  }
+  main .sec5 article {
+    width: 50%;
+    height: 200px;
+  }
+  main .sec5 article:nth-child(3) {
+    height: 400px;
+  }
+  main .sec5 article:nth-child(4),
+  main .sec5 article:nth-child(5) {
+    position: static;
+  }
+  main .sec5 article:nth-child(6) {
+    width: 100%;
+  }
+  main .sec5 article:hover {
+    opacity: 1;
+  }
+  .top-btn {
+    bottom: 10px;
+    right: 0px;
+  }
+}
