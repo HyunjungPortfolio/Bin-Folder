@@ -1,0 +1,236 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Krub);
+@import url(all.min.css);
+@import url(normalize.css);
+
+/*font*/
+body {
+  font-family: 'Krub', sans-serif;
+  color: #111;
+}
+
+.hidden {
+  display: none;
+}
+.wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 1
+}
+header .logo {
+  float: left;
+  margin-left: 50px;
+  width: 250px;
+  height: 80px;
+  background: url(../img/logo.svg) no-repeat center center / contain;
+}
+header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .h-rt {
+  float: right;
+  margin-right: 50px;
+}
+header .gnb {
+  float: left;
+  margin-right: 30px;
+  line-height: 80px;
+/*  font-size: 18px;*/
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -.3px;
+}
+header .gnb a {
+  padding: 5px;
+}
+header .gnb a:hover {
+  color: red;
+}
+header .snb {
+  float: left;
+  margin-top: 22px;
+  width: 100px;
+  height: 35px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 2px #777;
+  background: #fff;
+}
+header .snb li {
+  float: left;
+}
+header .snb a {
+  display: block;
+  position: relative;
+  width: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  color: #777;
+}
+header .snb li:first-child a {
+  margin-left: 10px;
+}
+header .snb a:hover {
+  color: #111;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+footer .sns {
+  float: left;
+  width: 150px;
+  height: 35px;
+  margin-left: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 2px #777;
+  background: #fff;
+}
+footer .sns a {
+  float: left;
+  width: 30px;
+  font-size: 20px;
+  padding: 8px 5px;
+  text-align: center;
+  color: #777;
+}
+footer .sns li:first-child {
+  margin-left: 14px;
+}
+footer .sns a:hover {
+  color: #111;
+}
+
+footer address {
+  float: right;
+  margin-right: 50px;
+  line-height: 40px;
+  font-size: .8em;
+  letter-spacing: -.3px;
+  font-weight: bold;
+  font-style: normal
+}
+
+main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.vid {
+  position: relative;
+}
+.vid h3 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  
+  font-size: 28px;
+  color: red;
+  text-align: center;
+  background: #fff;
+}
+.vid video {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+.vid .black {
+  color: #111;
+}
+.close-btn {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  width: 80px;
+  height: 80px;
+  
+  font-size: 50px;
+  background: transparent;
+  color: red;
+  text-shadow: 0px 0px 2px #fff;
+  cursor: pointer;
+}
+main section {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+  
+  transition: all .4s
+}
+main section h2 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  line-height: 60px;
+  
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: -2px;
+  background: rgba(255,255,255,.6);
+}
+main section .red {
+  color: red;
+}
+main section:nth-of-type(1) {
+  background: #fff;
+  background-color: #ffa2a2;
+  color: red;
+}
+main section:nth-of-type(2) {
+  background: url(../img/bg2.png) no-repeat 25% center / cover;
+  background-color: #f8d14e
+}
+main section:nth-of-type(3) {
+  background: url(../img/bg1.png) no-repeat 50% center / cover;
+  background-color: #50d5e4;
+}
+main section:nth-of-type(4) {
+  background: url(../img/bg2.png) no-repeat 75% center / cover;
+  background-color: #f8d14e
+}
+main section:nth-of-type(1):hover,
+main section:nth-of-type(2):hover,
+main section:nth-of-type(3):hover,
+main section:nth-of-type(4):hover {
+  background: #fff;
+}
+
+main section:nth-of-type(1):hover h2,
+main section:nth-of-type(2):hover h2,
+main section:nth-of-type(3):hover h2,
+main section:nth-of-type(4):hover h2 {
+  animation: i .4s infinite alternate;
+  background: none;
+}
+
+@keyframes i {
+  0% {transform: scale(1.2)}
+  100% {transform: scale(1.3)}
+}
