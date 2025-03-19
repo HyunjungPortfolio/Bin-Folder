@@ -1,0 +1,722 @@
+@charset "utf-8";
+@import url(common.css);
+
+/*figure*/
+.visual {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: 450px;
+}
+.visual .v-con {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+/*  overflow: hidden;*/
+}
+.visual .img-cover {
+  height: 100%;
+  overflow: hidden;
+}
+.visual img {
+  width: 60%;
+}
+.visual .txt-box {
+  position: absolute;
+  top: 0px;
+  left: 63%;
+  width: 37%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.visual p {
+  color: #aaa;
+}
+.visual .title h2 {
+  margin: 10px 0 20px;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+.visual .title {
+  margin-bottom: 20px;
+  border-bottom: solid 1px #222
+}
+.visual .icon-box {
+  position: relative;
+  width: 99.5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #777;
+  overflow: hidden;
+}
+.visual .icon li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.visual .icon i {
+  color: #aaa;
+  font-size: 30px
+}
+.visual .icon b {
+  font-size: 15px
+}
+.visual .icon p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+.visual .icon-box ul:last-child {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.visual .icon-box ul:last-child li {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+.visual .icon-box ul:last-child li:after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  width: 1px;
+  height: 60%;
+  background: #ddd;
+}
+.visual .icon-box ul:last-child li:first-of-type:after {
+  background: transparent;
+}
+.visual u {
+  text-decoration: none;
+  color: #f96a6e;
+  font-weight: bold;
+}
+.visual .price-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.visual .price {
+  font-size: 30px;
+  color: #222;
+  font-weight: bold;
+}
+.visual .purc-box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.visual .fa-heart {
+  display: block;
+  float: left;
+  width: 20%;
+  font-size: 70px;
+  color: #f96a6e;
+}
+.visual .purc-btn {
+  display: block;
+  float: right;
+  height: 70px;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 24px;
+  background: #f96a6e;
+  color: #fff;
+}
+.visual .purc-btn:hover {
+  border: solid 3px #f96a6e;
+  background: #fff;
+  color: #f96a6e;
+  font-weight: bold;
+}
+
+main {
+  position: relative;
+}
+main .m-con {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+.mobile-menu {
+  display: none;
+}
+
+/*main navigation*/
+main .mnb {
+  width: 1200px;
+  height: 50px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  z-index: 1
+}
+main .mnb.on {
+  position: fixed;
+  top: 60px;
+}
+main .mnb a {
+  float: left;
+  display: block;
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 17px;
+  letter-spacing: -.5px;
+  border-bottom: solid 1px #777
+}
+main .mnb a:hover,
+main .mnb a.on {
+  border-bottom: solid 3px #f96a6e;
+  color: #f96a6e;
+}
+
+/*main remote*/
+main .remote {
+  float: right;
+  top: 80px;
+  right: 0;
+  width: 250px;
+  padding: 50px 40px;
+  background: #ebebeb;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+main .remote.on {
+  position: sticky;
+  top: 140px;
+}
+main .remote h4 {
+  margin-top: 0px;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+main .remote h4:last-of-type {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+main .remote p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: -.5px;
+}
+main .remote .price {
+  margin-bottom: 50px;
+  color: #f96a6e;
+  font-weight: bold;
+  font-size: 30px;
+}
+main .remote button {
+  width: 47%;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 30px
+}
+main .remote .like-btn {
+  float: left;
+  background: transparent;
+  border: solid 2px #fff;
+  color: #f96a6e;
+}
+main .remote .like-btn:hover {
+  background: #fff;
+}
+main .remote .purc-btn {
+  float: right;
+  color: #f96a6e;
+  background: #fff;
+}
+main .remote .purc-btn:hover {
+  background: #f96a6e;
+  color: #fff;
+}
+
+/*main*/
+main .content {
+  float: left;
+  width: 720px;
+  overflow: hidden;
+}
+main section {
+  padding: 60px 0;
+  
+  font-size: 17px;
+  font-weight: lighter;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  text-align: justify;
+  border-bottom: solid 1px #aaa
+}
+main section h3 {
+  margin-bottom: 10px;;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+}
+main section .more {
+  margin-top: 10px;
+  color: #f96a6e;
+  font-weight: bold;
+}
+main section p {
+  margin-bottom: 15px;
+}
+main .img-list {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+main .img-list .img-cover {
+  float: left;
+  width: 38%;
+  height: 100%;
+  margin-right: 2%;
+  overflow: hidden;
+}
+main .img-list .gray-box {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-top: 60px;
+  height: 100%;
+  background: #ddd;
+  
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+}
+main .img-list .gray-box b {
+  font-weight: normal;
+  font-size: 36px;
+}
+main .img-list .gray-box a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main .txt-list p {
+  float: left;
+  width: 38%;
+  margin: 3px 2% 20px 0;
+  text-align: center;
+  font-size: 15px;
+}
+main .top {
+  margin-top: 30px;
+}
+main h4 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/*section 1*/
+main #sec1 article:nth-child(2) h3,
+main #sec1 article:nth-child(3) h3 {
+  margin-top: 80px;
+}
+main #sec1 .txt-box {
+  width: 100%;
+  margin-top: 20px;
+  padding: 40px 80px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #eee;
+  
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: -2px;
+}
+main #sec1 .txt-box p:last-child {
+  margin-bottom: 0;
+}
+main #sec1 article:nth-child(3) img {
+  margin-bottom: 10px;
+}
+
+/*section 2,4*/
+main #sec2 h4 {
+  margin-top: 0;
+}
+
+main #sec2 .txt-box,
+main #sec4 .txt-box {
+  margin-bottom: 10px;
+  padding: 40px 60px;
+  padding-left: 52%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: no-repeat -35% center / 60%;
+  background-color: #eee;
+}
+main #sec2 .txt-box {
+  background-image: url(../img/sub2/sec2.jpg);
+}
+main #sec4 .txt-box {
+  background-image: url(../img/sub2/sec4.jpg);
+}
+
+/*section 5*/
+main #sec5 article:nth-child(1) h4 {
+  margin-top: 0;
+}
+main #sec5 .faq-box {
+  margin-bottom: 30px;
+  padding: 30px 40px;
+  border-radius: 5px;
+  background: url(../img/dropdwn.svg) no-repeat 94% 35px / 12px;
+  background-color: #eee;
+}
+main #sec5 .faq-box:first-of-type {
+  background-image: url(../img/dropup.svg)
+}
+main #sec5 .faq-box p {
+  margin-bottom: 0;
+}
+main #sec5 .faq-box .quest {
+  font-weight: bold;
+  padding-right: 60px;
+}
+main #sec5 .faq-box .answer {
+  margin-top: 20px;
+}
+main #sec5 i {
+  color: #aaa;
+}
+main #sec5 article:last-child p {
+  margin-bottom: 0;
+}
+main #sec5 .img-list {
+  margin-top: 30px;
+  height: 170px;
+}
+main #sec5 .img-cover {
+  width: 23%;
+  margin-right: 2%;
+  overflow: hidden;
+}
+main #sec5 .gray-box {
+  width: 25%;
+  padding-top: 55px;
+}
+
+/*section 6*/
+main section:nth-child(7) {
+  border-bottom: none;
+}
+main .con-box {
+  height: 170px;
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+}
+main .con-box .con {
+  position: relative;
+  float: left;
+  width: 23%;
+  height: 100%;
+  margin-right: 2%;
+}
+main .con-box .con:last-child {
+  margin-right: none;
+}
+main .con-box .con a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+main .con-box .con:nth-child(1) a {
+  background: url(../img/md-4.jpg) no-repeat center / cover;
+}
+main .con-box .con:nth-child(2) a {
+  background: url(../img/sub2/thumb2.jpg) no-repeat center / cover;
+}
+main .con-box .con:nth-child(3) a {
+  background: url(../img/top10-2.jpg) no-repeat center -50px / cover;
+}
+main .con-box .con:nth-child(4) a {
+  background: url(../img/md-3.jpg) no-repeat center / cover;
+}
+main .con-box .con p {
+  position: relative;
+  top: 130px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/*refund*/
+main .refund {
+  background: #eee;
+}
+main .r-con {
+  padding: 50px 0;
+  width: 1200px;
+  margin: auto;
+}
+main .refund h3 {
+  margin-bottom: 10px;;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+}
+main .refund .more {
+  margin-top: 10px;
+  color: #f96a6e;
+  font-weight: bold;
+}
+/*title*/
+main .title {
+  padding-bottom: 100px;
+  font-size: 22px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 1.2;
+}
+main .title b {
+  color: #f96a6e;
+}
+main .title h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.1;
+}
+main .title h2:last-of-type {
+  margin-top: 100px;
+}
+main .title .con-box {
+  float: left;
+  width: 50%;
+}
+main .title i {
+  margin-bottom: 10px;
+  font-size: 72px;
+  color: #aaa;
+}
+main .title .small {
+  font-size: 16px
+}
+main .title .large {
+  font-size: 60px;
+  font-weight: normal;
+  color: #f96a6e;
+}
+.mobile-btm {
+  display: none;
+}
+
+/*tablet*/
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .visual .v-con {
+    width: 90%;
+  }
+  .visual .img-cover {
+    width: 46%;
+  }
+  .visual img {
+    width: 700px;
+  }
+  .visual .txt-box {
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    background: #fff;
+  }
+  main .m-con {
+    width: 90%;
+  }
+  main .mnb {
+    width: 100%;
+  }
+  main .mnb.on {
+    width: 90%;
+  }
+  main .content {
+    width: 80%;
+  }
+  main .r-con {
+    width: 90%;
+  }
+  main #sec2 .txt-box,
+  main #sec4 .txt-box {
+    background-size: 70%;
+    background-position: -75% center;
+    background-color: #eee
+  }
+  main #sec5 .faq-box {
+    background-position: 93% 35px
+  }
+  main .remote {
+    width: 156px;
+    padding: 25px 30px;
+  }
+  main .remote p span {
+    display: none;
+  }
+  main .remote p {
+    font-size: 16px
+  }
+  main .remote h4:last-of-type {
+    margin-top: 30px;
+  }
+  main .remote .price {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+  }
+  main .remote button {
+    float: none;
+    width: 100%;
+  }
+  main .remote .like-btn {
+    margin-bottom: 10px;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 900px) {
+  .visual {
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  .visual .v-con {
+    width: 100%;
+  }
+  .visual .img-cover {
+    width: 100%;
+    height: 300px;
+  }
+  .visual img {
+    width: 100%;
+  }
+  .visual .txt-box {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding-top: 10px;
+  }
+  .visual .icon-box {
+    margin: 40px 0;
+  }
+  .visual .price-box {
+    text-align: right;
+  }
+  .visual .purc-box {
+    display: none;
+  }
+  main .mnb {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+  }
+  main .mnb.on {
+    width: 100%;
+  }
+  main .mnb a {
+    width: 18%;
+    border-top: solid 1px #777;
+    border-bottom: solid 1px #777;
+    font-size: 15px;
+    letter-spacing: -1px;
+  }
+  main .mnb a:first-child {
+    margin-left: 5%;
+  }
+  main .mnb a:hover,
+  main .mnb a.on {
+    border-bottom: solid 3px #f96a6e;
+  }
+  main .m-con {
+    width: 100%;
+  }
+  main section h3 {
+    font-size: 30px
+  }
+  main .title {
+    font-size: 20px
+  }
+  main #sec1 .txt-box {
+    padding: 30px 20px;
+    font-size: 18px;
+  }
+  main #sec2 .txt-box,
+  main #sec4 .txt-box {
+    background-image: none;
+    padding: 30px 40px;
+  }
+  main #sec5 .faq-box {
+    background-position: 90% 35px
+  }
+  main #sec5 .img-cover {
+    width: 48%;
+    margin-right: 4%;
+  }
+  main #sec5 .img-cover:nth-child(2),
+  main #sec5 .img-cover:nth-child(3) {
+    display: none;
+  }
+  main #sec5 .gray-box {
+    width: 48%;
+  }
+  main .con-box .con {
+    width: 48%;
+    margin-right: 4%;
+  }
+  main .con-box .con:nth-child(2) {
+    margin-right: 0;
+  }
+  main .remote {
+    display: none;
+  }
+  main .content {
+    width: 90%;
+    margin-left: 5%;
+  }
+  main .refund .r-con {
+    width: 90%;
+  }
+  main .refund h3 {
+    font-size: 30px
+  }
+  .mobile-btm {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 0px 5px #aaa;
+    z-index: 1
+  }
+  .mobile-btm .like-btn {
+    display: block;
+    float: left;
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    color: #777;
+  }
+  .mobile-btm .purc-btn {
+    display: block;
+    float: right;
+    width: 85%;
+    height: 100%;
+    background: #f96a6e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

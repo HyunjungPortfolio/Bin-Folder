@@ -1,0 +1,277 @@
+@charset "utf-8";
+@import url(common.css);
+
+figure {
+  position: relative;
+  height: 400px;
+  background: url(../img/visualbg.jpg) no-repeat center -100px;
+  background-attachment: fixed;
+}
+figure .txt-box {
+  text-align: center;
+  padding-top: 180px;
+}
+figure .txt-box h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+figure .num-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+figure .num-box .num-con {
+  width: 1200px;
+  margin: auto;
+}
+figure .num-box .num {
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-size: 15px
+}
+figure .num-box .num:nth-child(2) {
+  width: 40%;
+}
+figure .num-box h3 {
+  font-weight: normal;
+  font-size: 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+main section {}
+main section .sec-con {
+  width: 1200px;
+  padding: 100px 0;
+  margin: auto;
+  text-align: center;
+}
+main section h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+/*  font-weight: normal;*/
+  letter-spacing: -.5px;
+}
+main .sec1 .sec-con:first-of-type {
+  padding: 150px 0;
+}
+main .sec1 .sec-con > p {
+  margin-top: 10px;
+  color: #777;
+}
+main .sec1 .txt-box {
+  margin-top: 50px;
+  padding: 50px 0;
+  background: #eee;
+  border-radius: 5px;
+  line-height: 1.5;
+  letter-spacing: -.5px;
+}
+main .sec1 .txt-box b {
+  color: #f96a6e;
+  font-weight: normal;
+}
+main .sec2 {
+  background: rgba(249, 106, 110, .2);
+}
+main .sec2 .img-box {
+  margin-top: 50px;
+}
+main .sec2 .box {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  height: 350px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 150px;
+  
+  transition: all .3s
+}
+main .sec2 .box:nth-child(1) {
+  background-image: url(../img/search.svg);
+  background-color: #fff;
+}
+main .sec2 .box:nth-child(2) {
+  background-image: url(../img/truck.svg);
+  background-color: #fff;
+}
+main .sec2 .box:nth-child(3) {
+  margin-right: 0;
+  background-image: url(../img/present.svg);
+  background-color: #fff;
+}
+main .sec2 .box:hover {
+  background-position: center 40px;
+}
+main .sec2 .img-box p {
+  margin-top: 220px;
+  line-height: 1.3;
+  letter-spacing: -.5px;
+}
+main .sec2 .img-box b {
+  color: #f96a6e;
+}
+main .sec3 .sec-con {
+  position: relative;
+}
+main .sec3 p {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+main .sec3 .quest {
+  height: 120px;
+}
+main .sec3 .quest:last-of-type {
+  margin-bottom: 80px;
+}
+main .sec3 .ck-btn {
+  display: block;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 60px;
+  border-radius: 0 50px 50px 0;
+  
+  background: #eee;
+}
+main .sec3 .left {
+  margin-left: -300px;
+  border-radius: 50px 0 0 50px;
+}
+main .sec3 .ck-btn:hover,
+main .sec3 .ck-btn:focus {
+  background: #aaa;
+}
+main .sec3 a {
+  padding: 15px 50px;
+  border: solid 1px #222;
+  border-radius: 5px;
+  font-size: 20px;
+}
+main .sec3 a:hover {
+  background: #777;
+  color: #fff;
+  border: 0
+}
+main .sec4 {
+  background: url(../img/sub1-bg.jpg) no-repeat center -100px / 110%;
+  color: #fff;
+}
+main .sec4 h3 {
+  margin-bottom: 50px;
+}
+main .sec4 a {
+  padding: 15px 100px;
+  background: #eee;
+  border-radius: 5px;
+  color: #222;
+  font-size: 20px;
+}
+main .sec4 a:hover {
+  border: solid 1px #eee;
+  background: transparent;
+  color: #eee;
+}
+
+/*tablet*/
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  figure {
+    background-position: 30% -100px
+  }
+  figure .tabletbg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/visualbg-right.jpg) no-repeat 180% -100px;
+    background-attachment: fixed;
+  }
+  figure .num-box .num-con {
+    width: 90%;
+  }
+  main section .sec-con {
+    width: 90%;
+  }
+  main .sec4 {
+    background-size: 120%;
+    background-position: center center
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 900px) {
+  figure {
+    height: 350px;
+    background: #fff
+  }
+  figure .txt-box {
+    padding-top: 120px;
+  }
+  figure .txt-box h2 {
+    font-size: 28px
+  }
+  figure .num-box .num-con {
+    width: 90%;
+  }
+  figure .num-box h3 {
+    padding-top: 25px;
+    font-size: 24px;
+  }
+  main section .sec-con {
+    width: 90%;
+  }
+  main section h3 {
+    font-size: 28px
+  }
+  main .sec1 .sec-con {
+    padding: 0 100px;
+  }
+  main .sec1 .txt-box {
+    padding: 50px;
+  }
+  main .sec1 img {
+    width: 200px;
+  }
+  main .sec2 .box {
+    float: none;
+    height: 340px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  main .sec2 .img-box p {
+    margin-top: 0px;
+    padding-top: 200px;
+  }
+  main .sec2 .box {
+    background-position: center 40px
+  }
+  main .sec4 {
+    background-size: 120%;
+    background-position: center center
+  }
+  main .sec3 .quest {
+    width: 100%;
+  }
+  main .sec3 .ck-btn {
+    width: 40%;
+  }
+  main .sec3 .left {
+    margin-left: -40%;
+  }
+  main .sec4 {
+    background-position: center center;
+    background-size: cover;
+  }
+  main .sec4 a {
+    padding: 10px 30px;
+  }
+}
