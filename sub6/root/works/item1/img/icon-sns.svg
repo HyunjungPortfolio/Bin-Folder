@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px"
+	 height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<g id="Layer_2" display="none">
+	<rect x="-71" y="-38" display="inline" fill="#333333" width="650" height="589"/>
+</g>
+<g id="Layer_1">
+	<path fill="#FFFFFF" d="M510.451,256.144c0,140.617-113.986,254.603-254.596,254.603c-140.613,0-254.606-113.985-254.606-254.603
+		C1.249,115.53,115.242,1.541,255.855,1.541C396.465,1.541,510.451,115.53,510.451,256.144z"/>
+	<g>
+		<line fill="none" stroke="#4F4F4F" stroke-width="22.7695" stroke-miterlimit="10" x1="343" y1="143.5" x2="143" y2="254.777"/>
+		<line fill="none" stroke="#4F4F4F" stroke-width="22.7695" stroke-miterlimit="10" x1="143" y1="254.777" x2="343" y2="368.5"/>
+	</g>
+	<g>
+		<circle fill="#FFFFFF" stroke="#4F4F4F" stroke-width="22.7695" stroke-miterlimit="10" cx="343" cy="143.5" r="39.748"/>
+		<circle fill="#FFFFFF" stroke="#4F4F4F" stroke-width="22.7695" stroke-miterlimit="10" cx="143" cy="254.777" r="39.748"/>
+		<circle fill="#FFFFFF" stroke="#4F4F4F" stroke-width="22.7695" stroke-miterlimit="10" cx="343" cy="368.5" r="39.748"/>
+	</g>
+</g>
+</svg>
