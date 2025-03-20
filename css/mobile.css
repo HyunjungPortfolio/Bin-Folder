@@ -32,18 +32,37 @@ main section {
 main section .content {
   position: relative;
 }
+main section .content {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+main section h1 {
+  font-family: "Monomakh", serif;
+  font-size: 4em;
+  padding-left: 10px;
+}
 
 
 /* section 0 */
 #sec0 {
-  height: 400px;
+  height: 700px;
+  font-family: "Monomakh", serif;
+  text-align: center;
 }
-#top-image {
+#sec0 #top-image {
   background:url("../image/portfolio.png") -25px -10px no-repeat;
-  height:500px;
+  height:300px;
   background-size: calc(100% + 50px);
   filter: hue-rotate(-20deg);
-  }
+  opacity: .4;
+}
+#sec0 img {
+  width: 50%;
+}
+#sec0 h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
 
 
 /* section 1 */
@@ -74,9 +93,11 @@ main section .content {
 }
 #sec1 .content article > p {
   height: 30px;
+  margin-bottom: 10px;
   font-family: "Monomakh", serif;
   font-weight: 600;
   padding-left: 10px;
+  font-size: 2em;
   color: rgb(255, 241, 158);
 }
 #sec1 .content article .box {
@@ -171,112 +192,59 @@ main section .content {
 }
 
 /* section 2 */
-#sec2 .content {
-  background: white;
-}
-#sec2 .content .line {
-  position: absolute;
-  top: 0;
-  width: 120px;
-  height: 100%;
-  border-right: 2px solid rgb(157, 203, 255);;
-}
 #sec2 .content .exp p {
-  margin-top: 40px;
-}
-#sec2 .content .exp p:nth-child(8) {
-  margin: 0;
+  padding-left: 10px;
 }
 #sec2 .content .exp p b {
+  display: block;
   font-family: "Monomakh", serif;
   font-weight: normal;
-  font-size: 1.4em;
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  padding-left: 40px;
-  color: rgb(157, 203, 255);
-  box-sizing: border-box;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: rgb(255, 241, 158);
 }
 #sec2 .content .exp p:nth-of-type(3) b, #sec2 .content .exp p:nth-of-type(4) b, #sec2 .content .exp p:nth-of-type(10) b {
-  opacity: 0;
-}
-#sec2 .content .exp p b:before {
-  content: '';
-  position: absolute;
-  right: -8px;
-  top: 4px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50px;
-  background: rgb(157, 203, 255);
-}
-#sec2 .content .exp p b:after {
-  content: '';
-  position: absolute;
-  right: -6px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background: white
-}
-#sec2 .content .exp p:nth-child(8) b:before, #sec2 .content .exp p:nth-child(8) b:after {
   display: none;
 }
 #sec2 .content .exp p span {
-  padding-left: 30px;
   letter-spacing: -0.8px;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 #sec2 .content .exp p i {
   display: inline-block;
-  padding-left: 160px;
+  padding-left: 10px;
   margin-top: 5px;
+  margin-bottom: 30px;
   font-style: normal;
-  color: rgb(157, 203, 255);
-  font-size: .9em;
+  letter-spacing: -0.5px;
+}
+#sec2 .content .exp p i::before {
+  content: '- ';
 }
 
 
-/* sec 3 */
-#sec3 .content {
-  background: #333;
-}
+
+/* sec 3 */ 
 #sec3 .content article {
   width: 100%;
-  height: 200px;
-  overflow: hidden;
-  color: white;
-  text-align: center;
-
-  position: relative;
-  isolation: isolate;
-}
-#sec3 .content article::after {
-  content: '';
-  position: absolute;
-  background: black;
-  z-index: -1;
-  inset: 0;
-  opacity: 0
+  height: 300px;
 }
 #sec3 .content article a {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
 }
-#sec3 .content article h3 {
-  position: relative;
-  margin-top: 28%;
-  line-height: 1.8em;
-  font-weight: 500;
+#sec3 .content h3 {
+  /* margin-top: 10px; */
+  padding-left: 10px;
+  line-height: 2em;
+  font-weight: 700;
   font-size: 2em;
-  opacity: 0;
-  transition: all 0.5s;
 }
-#sec3 .content article h3::after {
+#sec3 .content h3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -285,47 +253,35 @@ main section .content {
   height: 2px;
   background: white;
   transition: all 1s;
+  display: none;
 }
-#sec3 .content article p {
-  margin-top: 10px;
-  opacity: 0;
+#sec3 .content p {
+  padding-left: 10px;
+  margin-bottom: 40px;
 }
-#sec3 .content article:nth-child(1) {
+#sec3 .content article:nth-of-type(1) {
   background: url(../image/web1.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:nth-child(2) {
+#sec3 .content article:nth-of-type(2) {
   background: url(../image/web2.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:nth-child(3) {
+#sec3 .content article:nth-of-type(3) {
   background: url(../image/web3.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:nth-child(4) {
+#sec3 .content article:nth-of-type(4) {
   background: url(../image/web4.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:nth-child(5) {
+#sec3 .content article:nth-of-type(5) {
   background: url(../image/web5.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:nth-child(6) {
+#sec3 .content article:nth-of-type(6) {
   background: url(../image/web6.jpg) center center / cover no-repeat;
 }
-#sec3 .content article:hover h3, #sec3 .content article:hover p {
-  opacity: 1;
-}
-#sec3 .content article:hover::after {
-  opacity: 0.6;
-  transition: all .5s;
-}
-#sec3 .content article:hover h3::after {
-  width: 300px;
-  left: calc(50% - 150px);
-}
+
 
 /* sec 4 */
-#sec4 {
-  padding: 50px 0 50px 0;
-  background: white;
-}
 #sec4 .content .gallery {
+  margin-top: 40px;
   display: flex;
   gap: 5px;
   justify-content: left;
@@ -334,7 +290,7 @@ main section .content {
   margin-left: 5px;
 }
 #sec4 .content .gallery .imgbox {
-  width: calc(25% - 10px);
+  width: calc(25% - 5px);
   aspect-ratio: 1 / 1;
   overflow: hidden;
   /* background: blue; */
@@ -370,7 +326,7 @@ main section .content {
 .container{
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 1000px
 }
 .gallery-wrap {
   display: flex;
