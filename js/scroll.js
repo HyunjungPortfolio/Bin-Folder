@@ -60,18 +60,17 @@
     })
     
     
-    $section.on('mousewheel', function(e, delta) {
-    if (window.innerWidth <= 1000) return;
-
-    e.preventDefault();
-    currentIndex = $(this).index();
-
-    if (delta > 0 && currentIndex > 0) {
-        slide(currentIndex - 1);
-    } else if (delta < 0 && currentIndex < (count - 1)) {
-        slide(currentIndex + 1);
-    }
-});
+    $section.on('mousewheel', function(e, delta){
+      e.preventDefault();
+      currentIndex = $(this).index()
+      
+      if (delta > 0 && currentIndex > 0) {
+        slide(currentIndex - 1)
+      } else if (delta < 0 && currentIndex < (count-1)) {
+        slide(currentIndex + 1)
+      }
+      
+    })
     
   });
 })(jQuery);
