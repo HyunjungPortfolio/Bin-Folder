@@ -445,10 +445,13 @@ main section .content {
   padding-left: 160px;
   margin-top: 5px;
   font-style: normal;
+  font-weight: 500;
   color: rgb(157, 203, 255);
   font-size: .9em;
 }
-
+#sec2 .content .exp p i::before {
+  content: '- ';
+}
 
 /* sec 3 */
 #sec3 .content {
