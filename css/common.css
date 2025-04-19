@@ -379,6 +379,12 @@ main section .content {
 #sec1 .content article .skillname .jq::after {
   right: 28%;
 }
+#sec1 .content article .skillname .fig::after {
+  right: 24%;
+}
+#sec1 .content article .skillname .can::after {
+  right: 10%;
+}
 
 /* section 2 */
 #sec2 .content {
