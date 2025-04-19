@@ -264,7 +264,7 @@ main section .content {
 }
 #sec1 .content article:nth-child(n+3) {
   margin-top: 20px;
-  height: 550px;
+  height: 600px;
 }
 #sec1 .content article:nth-child(1) {
   /* padding-left: 30px; */
@@ -673,5 +673,11 @@ main section .content {
   }
   #sec3 .content article h3 {
     margin-top: 15%;
+  }
+  #sec1 .content article:nth-child(2) .box {
+    padding-top: 50px;
+  }
+  #sec1 .content article:nth-child(n+3) {
+    height: 550px;
   }
 }
